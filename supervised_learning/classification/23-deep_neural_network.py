@@ -13,11 +13,11 @@ class DeepNeuralNetwork:
     A class that  represents a deep neural network.
     """
     def __init__(self, nx, layers):
-        if type(nx) != int:
+        if not isinstance(nx, int):
             raise TypeError('nx must be an integer')
         if nx < 1:
             raise ValueError('nx must be a positive integer')
-        if type(layers) != list:
+        if not isinstance(layers, list):
             raise TypeError('layers must be a list of positive integers')
         if len(layers) < 1:
             raise TypeError('layers must be a list of positive integers')
