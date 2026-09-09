@@ -2,12 +2,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def generate_student_grades():
     # Set seed for reproducibility
     np.random.seed(5)
 
     # Generate random student grades with a normal distribution
     return np.random.normal(68, 15, 50)
+
 
 def plot_grade_distribution(student_grades):
     # Plotting a histogram
@@ -18,6 +20,7 @@ def plot_grade_distribution(student_grades):
     plt.xlim(0, 100)
     plt.ylim(0, 30)
     plt.show()
+
 
 if __name__ == "__main__":
     student_grades = generate_student_grades()
