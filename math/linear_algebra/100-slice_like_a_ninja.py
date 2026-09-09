@@ -4,6 +4,7 @@ A function `np_slice(matrix, axes)` that slices
 the matrix along specified axes.
 """
 
+
 def np_slice(matrix, axes):
     """
     A function `np_slice(matrix, axes)`
