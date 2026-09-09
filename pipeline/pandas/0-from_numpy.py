@@ -9,4 +9,3 @@ def from_numpy(array):
     n = len(array[0])
     df = pd.DataFrame(array, columns=[columns_title[i] for i in range(n)])
     return df
-    
